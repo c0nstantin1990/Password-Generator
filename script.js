@@ -17,7 +17,6 @@ function generatePassword() {
   var lowercaseLetters = confirm("Lowercase letters?");
   var numbers = confirm("Using numbers?");
   var specialCharacters = confirm("Special characters?");
-}
 //Defining possible characters to use in password
 var characters = "";
 if (uppercaseLetters) characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -32,7 +31,8 @@ if (!uppercaseLetters && !lowercaseLetters && !numbers && !specialCharacters) {
 }
 var password = "";
 for (var i = 0; i < passwordLength; i++) {
-  var randomIndex = Math.floor(math.random() * characters.length);
+  var randomIndex = Math.floor(Math.random() * characters.length);
   password += characters.charAt(randomIndex);
 }
 return password;
+};
