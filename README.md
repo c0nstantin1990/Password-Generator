@@ -26,3 +26,4 @@ Used existing css
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment
 https://www.programiz.com/javascript/examples/generate-random-strings
+https://owasp.org/www-community/password-special-characters

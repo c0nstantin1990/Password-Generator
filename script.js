@@ -24,7 +24,7 @@ function generatePassword() {
   if (uppercaseLetters) characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   if (lowercaseLetters) characters += "abcdefghijklmnopqrstuvwxyz";
   if (numbers) characters += "0123456789";
-  if (specialCharacters) characters += "!@#$%^&*()_+-=[]{}\\|;:'\",.<>/?`~";
+  if (specialCharacters) characters += "!@#$%^&*()_+-=[]{}|;:'\",.<>/?`~";
 
   //Makes suare selected at least 1 character type
   if (
