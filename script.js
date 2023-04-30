@@ -8,6 +8,13 @@ function writePassword() {
 
   passwordText.value = password;
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+// Generate password
+function generatePassword() {
+  var passwordLength = prompt("Password length?(8-128 characters)");
+  var uppercaseLetters = confirm("Uppercase letters?");
+  var lowercaseLetters = confirm("Lowercase letters?");
+  var numbers = confirm("Using numbers?");
+  var specialCharacters = confirm("Special characters?")
+}
