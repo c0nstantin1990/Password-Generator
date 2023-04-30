@@ -16,5 +16,10 @@ function generatePassword() {
   var uppercaseLetters = confirm("Uppercase letters?");
   var lowercaseLetters = confirm("Lowercase letters?");
   var numbers = confirm("Using numbers?");
-  var specialCharacters = confirm("Special characters?")
+  var specialCharacters = confirm("Special characters?");
 }
+//Defining possible characters to use in password
+if (uppercaseLetters) characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+if (lowercaseLetters) characters += "abcdefghijklmnopqrstuvwxyz";
+if (numbers) characters += "0123456789";
+if (specialCharacters) characters += "!@#$%^&*()_+-=[]{}\\|;:'\",.<>/?`~";
