@@ -17,22 +17,27 @@ function generatePassword() {
   var lowercaseLetters = confirm("Lowercase letters?");
   var numbers = confirm("Using numbers?");
   var specialCharacters = confirm("Special characters?");
-//Defining possible characters to use in password
-var characters = "";
-if (uppercaseLetters) characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-if (lowercaseLetters) characters += "abcdefghijklmnopqrstuvwxyz";
-if (numbers) characters += "0123456789";
-if (specialCharacters) characters += "!@#$%^&*()_+-=[]{}\\|;:'\",.<>/?`~";
+  //Defining possible characters to use in password
+  var characters = "";
+  if (uppercaseLetters) characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  if (lowercaseLetters) characters += "abcdefghijklmnopqrstuvwxyz";
+  if (numbers) characters += "0123456789";
+  if (specialCharacters) characters += "!@#$%^&*()_+-=[]{}\\|;:'\",.<>/?`~";
 
-//Makes suare selected character
-if (!uppercaseLetters && !lowercaseLetters && !numbers && !specialCharacters) {
-  alert("Select character.");
-  return "";
+  //Makes suare selected character
+  if (
+    !uppercaseLetters &&
+    !lowercaseLetters &&
+    !numbers &&
+    !specialCharacters
+  ) {
+    alert("Select character.");
+    return "";
+  }
+  var password = "";
+  for (var i = 0; i < passwordLength; i++) {
+    var randomIndex = Math.floor(Math.random() * characters.length);
+    password += characters.charAt(randomIndex);
+  }
+  return password;
 }
-var password = "";
-for (var i = 0; i < passwordLength; i++) {
-  var randomIndex = Math.floor(Math.random() * characters.length);
-  password += characters.charAt(randomIndex);
-}
-return password;
-};
