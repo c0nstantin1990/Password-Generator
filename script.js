@@ -29,3 +29,8 @@ if (!uppercaseLetters && !lowercaseLetters && !numbers && !specialCharacters) {
   alert("Select character.");
   return "";
 }
+var password = "";
+for (var i=0;i<passwordLength;i++) {
+  var randomIndex = Math.floor(math.random()*characters.length);
+  password += characters.charAt(randomIndex);
+}
