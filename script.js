@@ -16,10 +16,10 @@ function generatePassword() {
   var passwordLength = prompt("Password length?(8-128 characters)");
   var uppercaseLetters = confirm("Uppercase letters?");
   var lowercaseLetters = confirm("Lowercase letters?");
-  var numbers = confirm("Using numbers?");
+  var numbers = confirm("Numbers?");
   var specialCharacters = confirm("Special characters?");
-  
-  //Defining possible characters to use in password
+
+  //Defining possible characters & types to use in password
   var characters = "";
   if (uppercaseLetters) characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   if (lowercaseLetters) characters += "abcdefghijklmnopqrstuvwxyz";

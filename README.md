@@ -4,12 +4,13 @@
 
 - Project was built to create password generator on starter code
 - Program asks how long password has to be generated in range from 8 to 128 characters
-- Program asks to include in password uppercase, lowercase, numeric, and/or special characters  
+- Program asks to include in password uppercase, lowercase, numeric, and/or special characters
 - Program asks to include at least one character type
 
 ## Usage
 
 Generates password when press "Generate Password", depending on character type you choose
+Throws error if not using at least one type
 
 ![Web page](/assets/screenshots/page.png)
 ![Interaction](/assets/screenshots/usage.png)
